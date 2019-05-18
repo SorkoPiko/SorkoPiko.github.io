@@ -7,6 +7,11 @@ h1
   background-color: yellow;
   font-family: Verdana, sans-serif;
 }
+h2
+{
+  color: red;
+  font-family: Geneva, Calibri, sans-serif;
+}
 body
 {
  color: white;
