@@ -47,3 +47,7 @@ iframe
 }
 .checked-off {text-decoration:
 line-through;}
+#commands
+{
+  font-family: 'Share Tech Mono', monospace;
+}
