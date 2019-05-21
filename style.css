@@ -47,7 +47,7 @@ iframe
 }
 .checked-off {text-decoration:
 line-through;}
-#commands
+.commands
 {
   font-family: 'Share Tech Mono', monospace;
   color: rgb(255, 255, 255);
