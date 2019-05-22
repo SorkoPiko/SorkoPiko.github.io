@@ -47,12 +47,22 @@ iframe
 }
 .checked-off {text-decoration:
 line-through;}
-#commands
+#commandspc
 {
   font-family: 'Share Tech Mono', monospace;
   color: rgb(255, 255, 255);
 }
-#commands1
+#commandspc1
+{
+  font-family: 'Share Tech Mono', monospace;
+  color: rgb(255, 255, 255);
+}
+#commandspe
+{
+  font-family: 'Share Tech Mono', monospace;
+  color: rgb(255, 255, 255);
+}
+#commandspe1
 {
   font-family: 'Share Tech Mono', monospace;
   color: rgb(255, 255, 255);
