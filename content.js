@@ -50,13 +50,13 @@ $(function () {
     var cloudLevelMax = 12,
         bonus = 1,
         bonusCount = 0,
-        wallet = 0,
-        cashPerClick = 0.1,
+        wallet = 1000000000000000,
+        cashPerClick = 100000000,
         xp = 0,
-        cloudLevel = 0,
-        sad = true,
+        cloudLevel = 1,
+        sad = false,
         started = false,
-        clicked = false;
+        clicked = true;
 
 
     setInterval(function () {
