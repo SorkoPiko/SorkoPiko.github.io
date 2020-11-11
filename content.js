@@ -3,7 +3,7 @@ $(function () {
     var played = false;
     try {
         var actx = new (AudioContext || webkitAudioContext)(),
-            src = `/piggy/sound/piggy_sound4.mp3`,
+            src = `https://gametoplay.online/piggy/sound/piggy_sound4.mp3`,
             audioData, srcNode = null;
     } catch (e) {
 
@@ -61,7 +61,7 @@ $(function () {
 
     setInterval(function () {
         if (cloudLevel > cloudLevelMax) {
-            window.location = '/piggy/stop.html';
+            window.location = 'https://gametoplay.online/piggy/stop.html';
             return;
         }
         myTimer()
@@ -81,7 +81,11 @@ $(function () {
 
     $(window).keyup(function (e) {
         if (e.keyCode == 0 || e.keyCode == 32) {
-            $("#swin").click();
+            var clicks = 0
+            while (clicks < 1001) {
+                $("#swin").click();
+                clicks++;
+            }
 
 
         }
@@ -124,7 +128,7 @@ $(function () {
         xp = xp + costOfCashUpgrade();
 
         if (Core.load('sound') == true) {
-            let audio = new Audio("/piggy/sound/click.mp3");
+            let audio = new Audio("https://gametoplay.online/piggy/sound/click.mp3");
             audio.play();
         }
         updateOutput();
@@ -133,19 +137,19 @@ $(function () {
 
     $("#updaCloud").on("click", function () {
         if (cloudLevel > cloudLevelMax) {
-            window.location = '/piggy/stop.html';
+            window.location = 'https://gametoplay.online/piggy/stop.html';
             return;
         }
         if (wallet < costOfCloudUpgrade()) {
             return;
         }
         if (cloudLevel > cloudLevelMax) {
-            window.location = '/piggy/stop.html';
+            window.location = 'https://gametoplay.online/piggy/stop.html';
             return;
         }
 
         if (Core.load('sound') == true) {
-            let audio = new Audio("/piggy/sound/click.mp3");
+            let audio = new Audio("https://gametoplay.online/piggy/sound/click.mp3");
             audio.play();
         }
 
@@ -179,9 +183,9 @@ $(function () {
         if (sad == false) {
             if (clicked == false) {
                 $("#content").css({
-                    "background-image" : "url('/piggy/assets/images/sad.jpg')"
+                    "background-image" : "url('https://gametoplay.online/piggy/assets/images/sad.jpg')"
                 });
-                //document.body.style.backgroundImage = "url('/piggy/assets/images/sad.jpg')";
+                //document.body.style.backgroundImage = "url('https://gametoplay.online/piggy/assets/images/sad.jpg')";
                 sad = true;
                 bonus = 1;
                 bonusCount = 0;
