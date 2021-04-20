@@ -47,6 +47,10 @@ iframe
 }
 .checked-off {text-decoration:
 line-through;}
+input
+{
+  color: #000000;
+}
 #commandspc
 {
   font-family: 'Share Tech Mono', monospace;
