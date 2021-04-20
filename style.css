@@ -31,7 +31,7 @@ a
 }
 label
 {
-  color: #CCFF66
+  color: #CCFF66;
   font-size: 1.5em;
 }
 strong
@@ -78,6 +78,7 @@ line-through;}
 }
 #tempConvPage
 {
+  color: #000000;
 }
 #video
 {
